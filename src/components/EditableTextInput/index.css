@@ -1,0 +1,105 @@
+ .main-container {
+  min-height: 100vh;
+  background-color: #f5d0fe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-family: Roboto, sans-serif;
+}
+
+.card-container {
+  width: 90%;
+  max-width: 650px;
+  min-height: 300px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  color: #323f4b;
+  font-size: 32px;
+  margin-bottom: 30px;
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.text-input {
+  width: 70%;
+  height: 42px;
+  border: 1px solid #cbd2d9;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 16px;
+  outline: none;
+}
+
+.save-button {
+  height: 42px;
+  border: none;
+  border-radius: 5px;
+  background-color: #323f4b;
+  color: #ffffff;
+  padding: 0 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.saved-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.saved-text {
+  color: #000000;
+  font-size: 18px;
+  margin: 0;
+  word-break: break-word;
+}
+
+.edit-button {
+  border: 1px solid #323f4b;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #323f4b;
+  padding: 8px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+  .card-container {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .heading {
+    font-size: 26px;
+  }
+
+  .input-container {
+    flex-direction: column;
+  }
+
+  .text-input {
+    width: 100%;
+  }
+
+  .saved-container {
+    flex-direction: column;
+  }
+}
